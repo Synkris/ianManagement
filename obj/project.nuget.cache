@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ES0vl+fL48r3/MLi7HyP0SULfxOypMu6c9kEtl3OmY/5FEuGlRjoEAMTloFXUjJ4TLa2X284b+MzM7UU2qRLyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kristian Mathiaz\\source\\repos\\ianManagement\\ianManagement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kristian Mathiaz\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

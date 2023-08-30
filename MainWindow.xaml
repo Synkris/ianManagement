@@ -1,0 +1,83 @@
+﻿<Window x:Class="ianManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ianManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Name1" Content="Name" HorizontalAlignment="Left" Margin="35,11,0,0" VerticalAlignment="Top" Width="88" Cursor="Hand" Height="27"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="138,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Height="19"/>
+        <Label x:Name="PhoneNumber1" Content="PhoneNumber" HorizontalAlignment="Left" Margin="35,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="27"/>
+        <TextBox x:Name="PhoneNumber" HorizontalAlignment="Left" Margin="138,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"  Height="18"/>
+        <Label x:Name="Address1" Content="Address" HorizontalAlignment="Left" Margin="35,82,0,0" VerticalAlignment="Top" Height="27"/>
+        <TextBox x:Name="Address" HorizontalAlignment="Left" Margin="138,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="18"/>
+        <Label x:Name="Emaill" Content="Email" HorizontalAlignment="Left" Margin="35,113,0,0" VerticalAlignment="Top" Height="27"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="138,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="20"/>
+        <Label x:Name="DOB1" Content="Date Of Birth" HorizontalAlignment="Left" Margin="426,19,0,0" VerticalAlignment="Top" Height="27"/>
+        <DatePicker x:Name="DOB" HorizontalAlignment="Left" Margin="530,19,0,0" VerticalAlignment="Top" Width="231" Height="25"/>
+        <DatePicker x:Name="HireDate" HorizontalAlignment="Left" Margin="530,58,0,0" VerticalAlignment="Top" Width="231" Height="25"/>
+        <Label x:Name="HireDate1" Content="Hire Date" HorizontalAlignment="Left" Margin="426,59,0,0" VerticalAlignment="Top" Height="27"/>
+        <ComboBox x:Name="Gender" HorizontalAlignment="Left" Margin="531,102,0,0" VerticalAlignment="Top" Width="231" Height="24">
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+        </ComboBox>
+        <Label x:Name="Gender1" Content="Gender" HorizontalAlignment="Left" Margin="426,99,0,0" VerticalAlignment="Top" Height="28"/>
+        <ComboBox x:Name="Department" HorizontalAlignment="Left" Margin="530,144,0,0" VerticalAlignment="Top" Width="231" Height="23">
+            <ComboBoxItem Content="Management"/>
+            <ComboBoxItem Content="Account"/>
+            <ComboBoxItem Content="Hr"/>
+            <ComboBoxItem Content="PR"/>
+            <ComboBoxItem Content="Hosting"/>
+            <ComboBoxItem Content="Clearning"/>
+        </ComboBox>
+        <Label x:Name="Department1" Content="Department" HorizontalAlignment="Left" Margin="426,141,0,0" VerticalAlignment="Top" Height="27"/>
+        <TextBox x:Name="Salary" HorizontalAlignment="Left" Margin="138,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="18"/>
+        <Label x:Name="Salary1" Content="Salary" HorizontalAlignment="Left" Margin="35,144,0,0" VerticalAlignment="Top" Height="27"/>
+        <DataGrid x:Name="EmployeeDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,286,10,27"/>
+        <Label x:Name="Job1" Content="Job" HorizontalAlignment="Left" Margin="35,168,0,0" VerticalAlignment="Top" Height="29"/>
+        <Label x:Name="State1" Content="State" HorizontalAlignment="Left" Margin="426,171,0,0" VerticalAlignment="Top" Height="26"/>
+        <Label x:Name="Country1" Content="Country" HorizontalAlignment="Left" Margin="35,199,0,0" VerticalAlignment="Top" Height="26"/>
+        <Label x:Name="Religion1" Content="Religion" HorizontalAlignment="Left" Margin="426,211,0,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox x:Name="Age" HorizontalAlignment="Left" Margin="138,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="20"/>
+        <Label x:Name="Age1" Content="Age" HorizontalAlignment="Left" Margin="35,232,0,0" VerticalAlignment="Top" Height="27"/>
+        <Button x:Name="AddEmployeeButton" Content="Add" HorizontalAlignment="Left" Margin="696,249,0,0" VerticalAlignment="Top" Click="Add_Click" RenderTransformOrigin="0.612,0.696"/>
+        <Button x:Name="ViewEmployeesButton" Content="View" HorizontalAlignment="Left" Margin="735,248,0,0" VerticalAlignment="Top" Click="View_Click"/>
+        <ComboBox x:Name="Religion" HorizontalAlignment="Left" Margin="531,211,0,0" VerticalAlignment="Top" Width="233">
+            <ComboBoxItem Content="Christian"/>
+            <ComboBoxItem Content="Muslim"/>
+        </ComboBox>
+        <ComboBox x:Name="State" HorizontalAlignment="Left" Margin="531,181,0,0" VerticalAlignment="Top" Width="233">
+            <ComboBoxItem Content="Enugu"/>
+            <ComboBoxItem Content="Anambra"/>
+            <ComboBoxItem Content="Abia"/>
+            <ComboBoxItem Content="Ebonyi"/>
+            <ComboBoxItem Content="Abuja"/>
+            <ComboBoxItem Content="Kogi"/>
+            <ComboBoxItem Content="Imo"/>
+        </ComboBox>
+        <ComboBox x:Name="Job" HorizontalAlignment="Left" Margin="138,173,0,0" VerticalAlignment="Top" Width="234">
+            <ComboBoxItem Content="CEO"/>
+            <ComboBoxItem Content="Manager"/>
+            <ComboBoxItem Content="Accountant"/>
+            <ComboBoxItem Content="Human Resource(HR)"/>
+            <ComboBoxItem Content="Costumer Care Representative"/>
+            <ComboBoxItem Content="Developer"/>
+            <ComboBoxItem Content="Team Leader"/>
+            <ComboBoxItem Content="Tester"/>
+            <ComboBoxItem Content="Clearner"/>
+        </ComboBox>
+        <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="138,203,0,0" VerticalAlignment="Top" Width="234">
+            <ComboBoxItem Content="Nigeria"/>
+            <ComboBoxItem Content="United Kingdom"/>
+            <ComboBoxItem Content="Ghana"/>
+            <ComboBoxItem Content="USA"/>
+            <ComboBoxItem Content="Turkey"/>
+            <ComboBoxItem Content="Brazil"/>
+            <ComboBoxItem Content="South Africa"/>
+            <ComboBoxItem Content="Canadan"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
